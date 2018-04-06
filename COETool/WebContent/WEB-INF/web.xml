@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>COETool</display-name>
+	
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.coetool.servlet.controller.LoginController
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AccountController</servlet-name>
+		<servlet-class>com.coetool.servlet.controller.AccountController
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ApplicationController</servlet-name>
+		<servlet-class>com.coetool.servlet.controller.ApplicationController
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CalculateFTE</servlet-name>
+		<servlet-class>com.coetool.servlet.controller.CalculateFTEController
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RegistrationController</servlet-name>
+		<servlet-class>com.coetool.servlet.controller.RegistrationController
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/LoginController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegistrationController</servlet-name>
+		<url-pattern>/RegistrationController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AccountController</servlet-name>
+		<url-pattern>/AccountController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ApplicationController</servlet-name>
+		<url-pattern>/ApplicationController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CalculateFTE</servlet-name>
+		<url-pattern>/CalculateFTE</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
